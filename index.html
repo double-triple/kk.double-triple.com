@@ -197,18 +197,18 @@
     
     <!-- 主界面 -->
     <div class="dashboard" id="dashboard">
-        <img src="assets/logo.gif" alt="瑞桉旅游 Logo" class="logo">
+        <img src="瑞桉旅游丨从北欧到巴尔干半岛.gif" alt="瑞桉旅游 Logo" class="logo">
         <div class="welcome">KK，您好，欢迎回来</div>
         
         <!-- 旅游图标装饰 -->
         <div class="travel-icons">
-            <div class="travel-icon" data-tooltip="瑞桉旅游业务看板" onclick="openQuoteTool()">✈️</div>
-            <div class="travel-icon" data-tooltip="团队酒店统计分析" onclick="openHotelStats()">🏨</div>
-            <div class="travel-icon" data-tooltip="团队用车统计分析" onclick="openCarStats()">🗺️</div>
-            <div class="travel-icon" data-tooltip="目的地知识学习(内部)" onclick="openKnowledgeBase()">🏖️</div>
-            <div class="travel-icon">🏰</div>
-            <div class="travel-icon">🍽️</div>
-            <div class="travel-icon">🛳️</div>
+            <div class="travel-icon" data-tooltip="报价工具" onclick="openQuotePage()">✈️</div>
+            <div class="travel-icon" data-tooltip="酒店库" onclick="openHotelPage()">🏨</div>
+            <div class="travel-icon" data-tooltip="团队用车统计" onclick="openCarPage()">🗺️</div>
+            <div class="travel-icon" data-tooltip="景餐知识库" onclick="openKbPage()">🏖️</div>
+            <div class="travel-icon" data-tooltip="景餐知识库" onclick="openKbPage()">🏰</div>
+            <div class="travel-icon" data-tooltip="GreatLine官网" onclick="openGreatLine()">🍽️</div>
+            <div class="travel-icon" data-tooltip="GreatLine官网" onclick="openGreatLine()">🛳️</div>
         </div>
         
         <!-- 图标下方添加系统提示 -->
@@ -236,27 +236,41 @@
         }
         
         // 跳转到Google地图
-        function openQuoteTool() {
-            window.location.href = '报价工具11.30.html';
+        function openQuotePage() {
+            window.location.href = 'quote.html';
         }
 
-        function openHotelStats() {
-            window.location.href = '酒店-🙏🏻.html';
+        function openHotelPage() {
+            window.location.href = 'hotel.html';
         }
 
-        function openCarStats() {
-            window.location.href = '瑞桉旅游团队用车统计.html';
+        function openCarPage() {
+            window.location.href = 'car.html';
         }
 
-        function openKnowledgeBase() {
-            window.location.href = '景餐知识库-可分享导出.html';
+        function openKbPage() {
+            window.location.href = 'kb.html';
         }
 
-        // 打开ERP系统（外链）
+        function openGoogleMaps() {
+            window.location.href = 'kb.html';
+        }
+        
+        // 打开本地文件
+        function openLocalFile() {
+            window.location.href = 'car.html';
+        }
+        
+        // 打开ERP系统
         function openErpSystem() {
             window.open('https://saas.xingzongtravel.com/index', '_blank');
         }
-
+        
+        // 打开GreatLine网站
+        function openGreatLine() {
+            window.open('https://www.greatline.eu', '_blank');
+        }
+        
         // 回车键登录功能
         document.addEventListener('keypress', function(event) {
             if (event.key === 'Enter') {
