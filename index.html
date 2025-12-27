@@ -27,3 +27,6 @@
   </div>
 </body>
 </html>
+if (location.pathname !== '/' && location.pathname !== '/index.html') {
+  console.log('404 fallback:', location.pathname);
+}
