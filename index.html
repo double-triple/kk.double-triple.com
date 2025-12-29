@@ -1,35 +1,39 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>kk.double-triple.com</title>
-  <meta http-equiv="refresh" content="0; url=home.html">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Greatline · EDM</title>
+  <meta name="robots" content="noindex,nofollow"/>
   <style>
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",system-ui;background:#0b1020;color:#fff}
-    .wrap{max-width:860px;margin:60px auto;padding:0 18px}
-    h1{margin:0 0 10px;font-size:26px}
-    p{opacity:.8;line-height:1.6}
-    a{display:inline-block;margin:10px 12px 0 0;padding:12px 14px;border-radius:12px;text-decoration:none;color:#fff;
-      background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.15)}
-    a:hover{background:rgba(255,255,255,.14)}
-    .tip{margin-top:18px;font-size:12px;opacity:.7}
+    .wrap{max-width:980px;margin:40px auto;padding:0 18px}
+    h1{margin:0 0 12px;font-size:28px}
+    p{margin:0 0 22px;color:rgba(255,255,255,.7);line-height:1.7}
+    .card{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);border-radius:16px;padding:16px;margin:12px 0}
+    a{color:#9bd1ff;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .tag{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);margin-left:10px;color:rgba(255,255,255,.75)}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>正在进入首页…</h1>
-    <p>如果没有自动跳转，点下面的入口：</p>
-    <a href="home.html">进入首页</a>
-    <a href="格鲁吉亚10天_写实电影风_地球航线.html">地球航线（写实）</a>
-    <a href="格鲁吉亚10天_科技霓虹风_地球航线.html">地球航线（霓虹）</a>
-    <div class="tip">提示：建议用电脑 Chrome 打开，动画更稳。</div>
+    <h1>Greatline · EDM 文件库</h1>
+    <p>这里仅用于存放可对外发送的 EDM 页面。内部系统不在此处。</p>
+
+    <div class="card">
+      <a href="./edm/2026-01-01.html">EDM · 2026-01-01</a>
+      <span class="tag">示例</span>
+    </div>
+
+    <div class="card">
+      <a href="./edm/2026-01-15.html">EDM · 2026-01-15</a>
+      <span class="tag">示例</span>
+    </div>
+
+    <p style="margin-top:26px;font-size:12px;color:rgba(255,255,255,.55)">
+      © Greatline Travel
+    </p>
   </div>
 </body>
 </html>
-if (location.pathname !== '/' && location.pathname !== '/index.html') {
-  console.log('404 fallback:', location.pathname);
-}
-if (location.pathname !== '/' && location.pathname !== '/home') {
-  console.log('404 fallback from:', location.pathname);
-}
