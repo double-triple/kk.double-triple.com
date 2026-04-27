@@ -1,1 +1,245 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>瑞桉旅游信件风 EDM 模板</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f3f2f2;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
+      color: #010101;
+    }
+    table { border-collapse: collapse; }
+    img { border: 0; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* 航空信件边框：用重复线性渐变模拟红蓝斜纹 */
+    .airmail-frame {
+      background:
+        repeating-linear-gradient(135deg,
+          #1e9538 0 12px,
+          #ffffff 12px 22px,
+          #298fc2 22px 34px,
+          #ffffff 34px 44px,
+          #ff3131 44px 56px,
+          #ffffff 56px 66px
+        );
+      padding: 10px;
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .content-card {
+      background: #ffffff;
+    }
+
+    @media only screen and (max-width: 640px) {
+      .email-wrap { width: 100% !important; }
+      .inner { padding-left: 20px !important; padding-right: 20px !important; }
+      .hero-title { font-size: 28px !important; line-height: 1.2 !important; }
+      .two-col { display: block !important; width: 100% !important; }
+      .office-line { display: block !important; line-height: 1.8 !important; }
+    }
+  </style>
+</head>
+
+<body style="margin:0;padding:0;background:#f3f2f2;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f3f2f2;margin:0;padding:0;">
+    <tr>
+      <td align="center" style="padding:28px 12px;">
+
+        <!-- 邮件订阅操作区：边框之外，顶部 -->
+        <table role="presentation" class="email-wrap" width="660" cellpadding="0" cellspacing="0" style="width:660px;max-width:660px;margin:0 0 10px 0;">
+          <tr>
+            <td align="center" style="font-size:12px;line-height:1.6;color:#777777;">
+              <!-- 正式群发时，建议将 href 替换为 EDM 平台退订变量，例如 {{UNSUBSCRIBE_URL}} -->
+              <a href="mailto:Jack@greatline.eu?subject=我要退订此邮件&body=您好，我希望退订瑞桉旅游邮件。" style="color:#888888;text-decoration:none;">💔 我要退订此邮件</a>
+              <span style="color:#cccccc;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              <!-- 正式群发时，可将 href 替换为订阅落地页 URL -->
+              <a href="mailto:Jack@greatline.eu?subject=我要订阅此邮件&body=您好，我希望订阅瑞桉旅游邮件。" style="color:#1e9538;text-decoration:none;font-weight:bold;">❤️ 我要订阅此邮件</a>
+            </td>
+          </tr>
+        </table>
+
+        <!-- 固定航空信件边框：以后固定这层，不动它 -->
+        <table role="presentation" class="email-wrap" width="660" cellpadding="0" cellspacing="0" style="width:660px;max-width:660px;">
+          <tr>
+            <td class="airmail-frame" style="background:repeating-linear-gradient(135deg,#1e9538 0 12px,#ffffff 12px 22px,#298fc2 22px 34px,#ffffff 34px 44px,#ff3131 44px 56px,#ffffff 56px 66px);padding:10px;border-radius:18px;overflow:hidden;">
+
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="content-card" style="background:#ffffff;box-shadow:0 12px 34px rgba(1,1,1,0.10);border-radius:10px;overflow:hidden;">
+
+                <!-- Header / Logo -->
+                <tr>
+                  <td class="inner" style="padding:30px 34px 22px 34px;background:#ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="left" style="vertical-align:middle;">
+                          <!-- 替换LOGO：把 src 改成你的线上图片地址 -->
+                          <img src="https://dummyimage.com/180x54/f3f2f2/1e9538.png&text=LOGO" width="180" alt="瑞桉旅游 Great Line" style="width:180px;height:auto;">
+                        </td>
+                        <td align="right" style="vertical-align:middle;font-size:12px;line-height:1.5;color:#298fc2;letter-spacing:1px;text-transform:uppercase;">
+                          <strong style="font-weight:700;color:#298fc2;">Great Line Travel Letter</strong><br>
+                          <span style="color:#ec811b;">{{DATE}}</span><br>
+                          <span style="color:#010101;font-size:11px;">瑞桉旅游(欧洲) www.greatline.eu</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- 邮戳感分隔线 -->
+                <tr>
+                  <td style="padding:0 34px;background:#ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="border-top:1px dashed #00b2a9;font-size:0;line-height:0;">&nbsp;</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- 横版图片区，可替换：建议使用 1920x1080 横版图片，上传到线上图床/CDN 后替换 src -->
+                <tr>
+                  <td class="inner" style="padding:26px 34px 0 34px;background:#ffffff;">
+                    <img src="https://dummyimage.com/1920x1080/f3f2f2/298fc2.png&text=1920x1080+IMAGE" width="572" alt="横版主图占位" style="width:100%;height:auto;">
+                  </td>
+                </tr>
+
+                <!-- 主视觉区，可替换 -->
+                <tr>
+                  <td class="inner" style="padding:34px 34px 18px 34px;background:#ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fbe8d3;">
+                      <tr>
+                        <td style="padding:34px 30px;">
+                          <div style="font-size:13px;line-height:1.4;color:#ec811b;font-weight:bold;letter-spacing:1.5px;">
+                            EUROPE · CAUCASUS · BALKANS
+                          </div>
+                          <h1 class="hero-title" style="margin:12px 0 12px 0;font-size:34px;line-height:1.15;color:#010101;font-weight:700;">
+                            这里放本期邮件主题标题
+                          </h1>
+                          <p style="margin:0;font-size:15px;line-height:1.8;color:#333333;">
+                            这里放本期导语。建议控制在 60–100 个中文字符内，适合做旅游产品推荐、目的地灵感、节庆活动或商务考察简报。
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- 中部内容区，可替换 -->
+                <tr>
+                  <td class="inner" style="padding:10px 34px 30px 34px;background:#ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td class="two-col" width="50%" style="width:50%;padding:0 10px 18px 0;vertical-align:top;">
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #f3f2f2;">
+                            <tr>
+                              <td style="height:150px;background:#f3f2f2;">
+                                <img src="https://dummyimage.com/280x150/298fc2/ffffff.png&text=IMAGE" width="280" alt="图片占位" style="width:100%;height:auto;">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:16px;">
+                                <div style="font-size:16px;line-height:1.4;color:#1e9538;font-weight:bold;">内容模块标题</div>
+                                <p style="margin:8px 0 0 0;font-size:13px;line-height:1.7;color:#444444;">
+                                  这里放简短介绍，适合目的地亮点、行程卖点、酒店资源、节庆信息。
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="two-col" width="50%" style="width:50%;padding:0 0 18px 10px;vertical-align:top;">
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #f3f2f2;">
+                            <tr>
+                              <td style="height:150px;background:#f3f2f2;">
+                                <img src="https://dummyimage.com/280x150/00b2a9/ffffff.png&text=IMAGE" width="280" alt="图片占位" style="width:100%;height:auto;">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:16px;">
+                                <div style="font-size:16px;line-height:1.4;color:#1e9538;font-weight:bold;">内容模块标题</div>
+                                <p style="margin:8px 0 0 0;font-size:13px;line-height:1.7;color:#444444;">
+                                  后续每一期只替换这里，不动顶部、底部和外框。别让版式满地乱跑。
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="center" style="padding:8px 0 0 0;">
+                          <a href="#" style="display:inline-block;background:#ec811b;color:#ffffff;font-size:14px;font-weight:bold;line-height:1;padding:14px 28px;border-radius:0;">
+                            查看更多目的地方案
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- Footer 社媒图标区 -->
+                <tr>
+                  <td class="inner" style="padding:26px 34px 18px 34px;background:#010101;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="center" style="font-size:0;line-height:0;padding-bottom:18px;">
+                          <!-- 正式版请把 # 替换为二维码落地页或官方链接；把 dummyimage 替换为真实 32x32 图标 -->
+                          <a href="#" style="display:inline-block;margin:0 6px;"><img src="https://dummyimage.com/32x32/1e9538/ffffff.png&text=W" width="32" height="32" alt="微信"></a>
+                          <a href="#" style="display:inline-block;margin:0 6px;"><img src="https://dummyimage.com/32x32/ec811b/ffffff.png&text=G" width="32" height="32" alt="公众号"></a>
+                          <a href="#" style="display:inline-block;margin:0 6px;"><img src="https://dummyimage.com/32x32/298fc2/ffffff.png&text=V" width="32" height="32" alt="视频号"></a>
+                          <a href="#" style="display:inline-block;margin:0 6px;"><img src="https://dummyimage.com/32x32/ff3131/ffffff.png&text=R" width="32" height="32" alt="小红书"></a>
+                          <a href="#" style="display:inline-block;margin:0 6px;"><img src="https://dummyimage.com/32x32/00b2a9/ffffff.png&text=D" width="32" height="32" alt="抖音"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="font-size:12px;line-height:1.8;color:#f3f2f2;">
+                          Copyright：瑞桉旅游丨Great Line Travel X BOKIKO Tour Group
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding-top:8px;font-size:11px;line-height:1.8;color:#bfbfbf;">
+                          <span class="office-line">欧洲Office：爱沙尼亚·塔林&nbsp;&nbsp;&nbsp; 波兰·华沙&nbsp;&nbsp;&nbsp; 塞尔维亚·贝尔格莱德&nbsp;&nbsp;&nbsp; 克罗地亚·萨格勒布</span><br>
+                          <span class="office-line">中国Office：中国·北京&nbsp;&nbsp;&nbsp; 中国·广州&nbsp;&nbsp;&nbsp; 中国·南京&nbsp;&nbsp;&nbsp; 中国·成都&nbsp;&nbsp;&nbsp; 中国·上海</span><br>
+                          <span class="office-line">邮箱：<a href="mailto:Jack@greatline.eu" style="color:#bfbfbf;text-decoration:none;">Jack@greatline.eu</a>&nbsp;&nbsp;&nbsp; 电话：176-1038-7600</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+              </table>
+
+            </td>
+          </tr>
+        </table>
+        <!-- /固定航空信件边框 -->
+
+        <!-- 邮件订阅操作区：边框之外，底部 -->
+        <table role="presentation" class="email-wrap" width="660" cellpadding="0" cellspacing="0" style="width:660px;max-width:660px;margin:10px 0 0 0;">
+          <tr>
+            <td align="center" style="font-size:12px;line-height:1.6;color:#777777;">
+              <!-- 正式群发时，建议将 href 替换为 EDM 平台退订变量，例如 {{UNSUBSCRIBE_URL}} -->
+              <a href="mailto:Jack@greatline.eu?subject=我要退订此邮件&body=您好，我希望退订瑞桉旅游邮件。" style="color:#888888;text-decoration:none;">💔 我要退订此邮件</a>
+              <span style="color:#cccccc;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              <!-- 正式群发时，可将 href 替换为订阅落地页 URL -->
+              <a href="mailto:Jack@greatline.eu?subject=我要订阅此邮件&body=您好，我希望订阅瑞桉旅游邮件。" style="color:#1e9538;text-decoration:none;font-weight:bold;">❤️ 我要订阅此邮件</a>
+            </td>
+          </tr>
+        </table>
+
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
 
