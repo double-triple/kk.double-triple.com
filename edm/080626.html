@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>瑞桉旅游(欧洲地接)EDM</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f3f2f2;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
+      color: #010101;
+    }
+    table { border-collapse: collapse; }
+    img { border: 0; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* 航空信件边框：用重复线性渐变模拟红蓝斜纹 */
+    .airmail-frame {
+      background:
+        repeating-linear-gradient(135deg,
+          #1e9538 0 12px,
+          #ffffff 12px 22px,
+          #298fc2 22px 34px,
+          #ffffff 34px 44px,
+          #ff3131 44px 56px,
+          #ffffff 56px 66px
+        );
+      padding: 10px;
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .content-card {
+      background: #ffffff;
+    }
+
+    @media only screen and (max-width: 640px) {
+      .email-wrap { width: 100% !important; }
+      .inner { padding-left: 20px !important; padding-right: 20px !important; }
+      .hero-title { font-size: 28px !important; line-height: 1.2 !important; }
+      .two-col { display: block !important; width: 100% !important; }
+      .office-line { display: block !important; line-height: 1.8 !important; }
+    }
+  </style>
+</head>
+
+<body style="margin:0;padding:0;background:#f3f2f2;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f3f2f2;margin:0;padding:0;">
+    <tr>
+      <td align="center" style="padding:28px 12px;">
+
+        <!-- ========== 固定区开始：顶部订阅/退订，不得修改，除非用户明确授权 ========== -->
+        <!-- 邮件订阅操作区：边框之外，顶部 -->
+        <table role="presentation" class="email-wrap" width="660" cellpadding="0" cellspacing="0" style="width:660px;max-width:660px;margin:0 0 10px 0;">
+          <tr>
+            <td align="center" style="font-size:12px;line-height:1.6;color:#777777;">
+              <!-- 正式群发时，建议将 href 替换为 EDM 平台退订变量，例如 {{UNSUBSCRIBE_URL}} -->
+              <a href="mailto:Jack@greatline.eu?subject=我要退订此邮件&body=您好，我希望退订瑞桉旅游邮件。" style="color:#888888;text-decoration:none;">💔 我要退订此邮件</a>
+              <span style="color:#cccccc;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              <!-- 正式群发时，可将 href 替换为订阅落地页 URL -->
+              <a href="mailto:Jack@greatline.eu?subject=我要订阅此邮件&body=您好，我希望订阅瑞桉旅游邮件。" style="color:#1e9538;text-decoration:none;font-weight:bold;">❤️ 我要订阅此邮件</a>
+            </td>
+          </tr>
+        </table>
+
+        <!-- ========== 固定区结束：顶部订阅/退订 ========== -->
+
+        <!-- ========== 固定区开始：航空信件边框 + Header，不得修改，除非用户明确授权 ========== -->
+        <!-- 固定航空信件边框：以后固定这层，不动它 -->
+        <table role="presentation" class="email-wrap" width="660" cellpadding="0" cellspacing="0" style="width:660px;max-width:660px;">
+          <tr>
+            <td class="airmail-frame" style="background:repeating-linear-gradient(135deg,#1e9538 0 12px,#ffffff 12px 22px,#298fc2 22px 34px,#ffffff 34px 44px,#ff3131 44px 56px,#ffffff 56px 66px);padding:10px;border-radius:18px;overflow:hidden;">
+
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="content-card" style="background:#ffffff;box-shadow:0 12px 34px rgba(1,1,1,0.10);border-radius:10px;overflow:hidden;">
+
+                <!-- Header / Logo -->
+                <tr>
+                  <td class="inner" style="padding:30px 34px 22px 34px;background:#ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="left" style="vertical-align:middle;">
+                          <!-- 替换LOGO：把 src 改成你的线上图片地址 -->
+                          <a href="https://www.greatline.eu" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none;">
+                            <img src="https://www.double-triple.com/edm/assets/common/logo-main.png" width="180" alt="瑞桉旅游 Great Line Travel" style="width:180px;max-width:180px;height:auto;">
+                          </a>
+                        </td>
+                        <td align="right" style="vertical-align:middle;font-size:12px;line-height:1.5;color:#298fc2;letter-spacing:1px;text-transform:uppercase;">
+                          <strong style="font-weight:800;color:#1e9538;">GREAT LINE</strong> <strong style="font-weight:800;color:#ec811b;">News Letter</strong><br>
+                          <span style="display:block;text-align:right;color:#298fc2;font-size:11px;font-weight:700;">瑞桉旅游(简报：080626期)</span>
+                          <a href="https://www.greatline.eu" target="_blank" rel="noopener" title="点击进入官网" style="color:#ff3131;font-size:11px;font-weight:800;text-decoration:none;text-transform:lowercase;">www.greatline.eu</a>
+                          <a href="https://www.greatline.eu" target="_blank" rel="noopener" title="点击进入官网" style="display:inline-block;margin-left:4px;color:#ec811b;font-size:13px;text-decoration:none;">👈点击进入官网</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- 邮戳感分隔线 -->
+                <tr>
+                  <td style="padding:0 34px;background:#ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="border-top:1px dashed #00b2a9;font-size:0;line-height:0;">&nbsp;</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- ========== 固定区结束：航空信件边框 + Header ========== -->
+
+                <!-- ========== 可改区开始：每期 EDM 只允许修改此区域 ========== -->
+                <!-- 内容生成规则：
+                     1. 固定区永久锁定：未得到用户明确命令，不得修改边框、Header、Logo、Footer、社媒、版权、订阅退订区。
+                     2. 信封框内主背景固定为纯白色；Footer 固定为深灰色。
+                     3. 每期新闻正文按 66 个可见字符处理：超过截断，不足可自然补足；不使用生硬重复词。
+                     4. 模块1/模块2描述按 56 个可见字符处理：超过截断，不足可自然补足；不使用生硬重复词。
+                     5. 常规新邮件只允许修改可改区：日期/期数、主图、品牌短句、标题、新闻、模块、CTA。
+                -->
+                <!-- 横版图片区，可替换：建议使用 1920x1080 横版图片，上传到线上图床/CDN 后替换 src -->
+                <tr>
+                  <td class="inner" style="padding:26px 34px 0 34px;background:#ffffff;">
+                    <a href="https://mp.weixin.qq.com/s/3CRpPsl0rsHEC7xuZMkXAw" target="_blank" rel="noopener" style="display:block;text-decoration:none;">
+                      <img src="https://kk.double-triple.com/edm/assets/080626/cover.png" width="572" alt="瑞桉旅游简报 080626期 主图" style="width:100%;height:auto;">
+                        <span style="display:block;margin-top:8px;background:#fff8ef;border:1px solid #f3d6b8;color:#ec811b;text-align:center;font-size:13px;line-height:1.4;font-weight:800;letter-spacing:0.4px;padding:10px 14px;border-radius:0;">
+                          点击图片，阅读全文 →
+                        </span>
+                    </a>
+                  </td>
+                </tr>
+
+                <!-- 品牌介绍模块：独立于主图和主题标题模块，可按用户明确要求修改 -->
+                <tr>
+                  <td class="inner" style="padding:24px 34px 0 34px;background:#ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff;border:1px solid #f3f2f2;border-left:6px solid #1e9538;border-right:6px solid #1e9538;">
+                      <tr>
+                        <td style="padding:22px 24px;">
+                          <h2 style="margin:0;text-align:center;font-size:22px;line-height:1.3;color:#1e9538;font-weight:800;">
+                            瑞桉旅游 Great Line Travel
+                          </h2>
+                          <div style="margin:6px 0 16px 0;text-align:center;font-size:14px;line-height:1.6;color:#ec811b;font-weight:800;">
+                            19年资源积淀，让每一次合作都精准交付。
+                          </div>
+                          <div style="margin:0 0 14px 0;text-align:center;font-size:14px;line-height:1.8;color:#333333;">
+                            <div style="text-align:center;font-weight:800;color:#298fc2;">接待区域</div>
+                            <div style="text-align:center;">北欧五国 / 波罗的海 / 东欧四国 / 巴尔干半岛 / 高加索三国</div>
+                          </div>
+                          <div style="text-align:center;font-size:13px;line-height:1.8;color:#1e9538;font-weight:800;margin-bottom:12px;">
+                            丨旅游系列团丨定制单团丨公商务团丨会展团丨游学团丨
+                          </div>
+                          <div style="text-align:right;">
+                            <a href="https://www.greatline.eu" target="_blank" rel="noopener" style="font-size:12px;color:#ff3131;font-weight:bold;text-decoration:none;">
+                              👉 了解我们
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- 主视觉区，可替换 -->
+                <tr>
+                  <td class="inner" style="padding:34px 34px 18px 34px;background:#ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fbe8d3;">
+                      <tr>
+                        <td style="padding:22px 30px;">
+                          <h1 class="hero-title" style="margin:12px 0 12px 0;font-size:34px;line-height:1.15;color:#010101;font-weight:700;">
+                            Hello，我们，认识一下吧~
+                          </h1>
+                          <div style="margin:0;font-size:13px;line-height:1.8;color:#333333;">
+                            <p style="margin:0 0 10px 0;">
+                              <span style="display:inline-block;background:#1e9538;color:#ffffff;font-size:11px;font-weight:bold;line-height:1;padding:4px 7px;margin-right:6px;border-radius:999px;">01</span><strong style="color:#010101;">瑞桉旅游丨19年专线旅游定制经验</strong><br>
+                              极光下静候，让纷乱思绪彻底放空 🌌❄️酒庄内小酌，细品风土醇厚的馈赠 🍷🍇山野间徒步，荒原秘境里找回自我 🥾🌲建筑中寻觅，凝固在时光 ··· ··· <a href="https://mp.weixin.qq.com/s/eU8t4pF6gLaSAId6wiOT2g" target="_blank" rel="noopener" style="display:inline-block;background:#fbe8d3;border:1px solid #ec811b;color:#ec811b;font-size:12px;font-weight:800;line-height:1;padding:5px 10px;text-decoration:none;border-radius:999px;">👉 点击阅读</a>
+                            </p>
+                            <p style="margin:0 0 10px 0;">
+                              <span style="display:inline-block;background:#298fc2;color:#ffffff;font-size:11px;font-weight:bold;line-height:1;padding:4px 7px;margin-right:6px;border-radius:999px;">02</span><strong style="color:#010101;">重磅~ 尘封5年，安缦·圣斯特凡酒店(黑山)盛大重启</strong><br>
+                              这座仿佛从亚得里亚海中浮现的“孤岛城堡”，曾是玛丽莲·梦露、伊丽莎白·泰勒等好莱坞巨星的度假后花园，也是安缦家族中最具传奇色彩的分号 ··· ··· <a href="https://mp.weixin.qq.com/s/fDCx7xREfgd9brKKu1HjqQ" target="_blank" rel="noopener" style="display:inline-block;background:#fbe8d3;border:1px solid #ec811b;color:#ec811b;font-size:12px;font-weight:800;line-height:1;padding:5px 10px;text-decoration:none;border-radius:999px;">👉 点击阅读</a>
+                            </p>
+                            <p style="margin:0;">
+                              <span style="display:inline-block;background:#ec811b;color:#ffffff;font-size:11px;font-weight:bold;line-height:1;padding:4px 7px;margin-right:6px;border-radius:999px;">03</span><strong style="color:#010101;">波罗的海三国：被低估的欧洲小众线路的隐藏王者</strong><br>
+                              波罗的海三国爱沙尼亚·拉脱维亚·立陶宛她从不是谁的替代品 ~百年的纷争，未使她屈服 ~遍地的繁华，从未令她盲从 ~苦难间孕育温柔，喧 ··· ··· <a href="https://mp.weixin.qq.com/s/6GXQONqiH4FoW8_g-9LR7g" target="_blank" rel="noopener" style="display:inline-block;background:#fbe8d3;border:1px solid #ec811b;color:#ec811b;font-size:12px;font-weight:800;line-height:1;padding:5px 10px;text-decoration:none;border-radius:999px;">👉 点击阅读</a>
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- 中部内容区，可替换 -->
+                <tr>
+                  <td class="inner" style="padding:10px 34px 30px 34px;background:#ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td class="two-col" width="50%" style="width:50%;padding:0 10px 18px 0;vertical-align:top;">
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #f3f2f2;">
+                            <tr>
+                              <td style="height:150px;background:#f3f2f2;">
+                                <a href="https://mp.weixin.qq.com/s/urA_DlLsFeCT_cy7sLnNfw" target="_blank" rel="noopener" style="display:block;text-decoration:none;">
+                                  <img src="https://kk.double-triple.com/edm/assets/080626/estonia.png" width="280" alt="走进爱沙尼亚" style="width:100%;height:auto;">
+                                  <span style="display:block;margin-top:0;background:#1e9538;color:#ffffff;text-align:center;font-size:12px;line-height:1.4;font-weight:800;padding:8px 10px;">
+                                    点击图片，看完整内容 →
+                                  </span>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:16px;">
+                                <div style="font-size:16px;line-height:1.4;color:#1e9538;font-weight:bold;">走进爱沙尼亚</div>
+                                <p style="margin:8px 0 0 0;font-size:13px;line-height:1.7;color:#444444;">
+                                  很多国人初识爱沙尼亚，往往来自两个出圈名场面：一是，经典国产剧《手机》里，费墨一句 “爱沙尼亚是个好地方”，让这 ··· ··· <a href="https://mp.weixin.qq.com/s/urA_DlLsFeCT_cy7sLnNfw" target="_blank" rel="noopener" style="display:inline-block;background:#fbe8d3;border:1px solid #ec811b;color:#ec811b;font-size:12px;font-weight:800;line-height:1;padding:5px 10px;text-decoration:none;border-radius:999px;">👉 点击阅读</a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="two-col" width="50%" style="width:50%;padding:0 0 18px 10px;vertical-align:top;">
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #f3f2f2;">
+                            <tr>
+                              <td style="height:150px;background:#f3f2f2;">
+                                <a href="https://mp.weixin.qq.com/s/fDCx7xREfgd9brKKu1HjqQ" target="_blank" rel="noopener" style="display:block;text-decoration:none;">
+                                  <img src="https://kk.double-triple.com/edm/assets/080626/hotel.png" width="280" alt="安缦·圣斯特凡酒店" style="width:100%;height:auto;">
+                                  <span style="display:block;margin-top:0;background:#ec811b;color:#ffffff;text-align:center;font-size:12px;line-height:1.4;font-weight:800;padding:8px 10px;">
+                                    点击图片，看完整内容 →
+                                  </span>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:16px;">
+                                <div style="font-size:16px;line-height:1.4;color:#1e9538;font-weight:bold;">安缦·圣斯特凡酒店</div>
+                                <p style="margin:8px 0 0 0;font-size:13px;line-height:1.7;color:#444444;">
+                                  这座仿佛从亚得里亚海中浮现的“孤岛城堡”，曾是玛丽莲·梦露、伊丽莎白·泰勒等好莱坞巨星的度假后花园，也是安缦家族 ··· ··· <a href="https://mp.weixin.qq.com/s/fDCx7xREfgd9brKKu1HjqQ" target="_blank" rel="noopener" style="display:inline-block;background:#fbe8d3;border:1px solid #ec811b;color:#ec811b;font-size:12px;font-weight:800;line-height:1;padding:5px 10px;text-decoration:none;border-radius:999px;">👉 点击阅读</a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="center" style="padding:8px 0 0 0;">
+                          <a href="https://mp.weixin.qq.com/s/3CRpPsl0rsHEC7xuZMkXAw" target="_blank" rel="noopener" style="display:inline-block;background:#ec811b;color:#ffffff;font-size:14px;font-weight:bold;line-height:1;padding:14px 28px;border-radius:0;">
+                            查看更多
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- ========== 可改区结束：每期 EDM 只允许修改此区域 ========== -->
+
+                <!-- ========== 固定区开始：Footer 社媒/版权/Office 信息，不得修改，除非用户明确授权 ========== -->
+                <!-- Footer 社媒图标区 -->
+                <tr>
+                  <td class="inner" style="padding:26px 34px 18px 34px;background:#222222;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="center" style="font-size:0;line-height:0;padding-bottom:18px;">
+                          <a href="https://www.double-triple.com/" target="_blank" rel="noopener" style="display:inline-block;margin:0 6px;"><img src="https://www.double-triple.com/edm/assets/common/icon-wechat.png" width="32" height="32" alt="微信" style="width:32px;max-width:32px;height:32px;" title="微信"></a>
+                          <a href="https://mp.weixin.qq.com/s/i25WvaKLVZW1jfh8je2gjQ" target="_blank" rel="noopener" style="display:inline-block;margin:0 6px;"><img src="https://www.double-triple.com/edm/assets/common/icon-gongzhonghao.png" width="32" height="32" alt="公众号" style="width:32px;max-width:32px;height:32px;" title="公众号"></a>
+                          <a href="https://www.double-triple.com/" target="_blank" rel="noopener" style="display:inline-block;margin:0 6px;"><img src="https://www.double-triple.com/edm/assets/common/icon-video.png" width="32" height="32" alt="视频号" style="width:32px;max-width:32px;height:32px;" title="视频号"></a>
+                          <a href="https://www.double-triple.com/" target="_blank" rel="noopener" style="display:inline-block;margin:0 6px;"><img src="https://www.double-triple.com/edm/assets/common/icon-redbook.png" width="32" height="32" alt="小红书" style="width:32px;max-width:32px;height:32px;" title="小红书"></a>
+                          <a href="https://www.double-triple.com/" target="_blank" rel="noopener" style="display:inline-block;margin:0 6px;"><img src="https://www.double-triple.com/edm/assets/common/icon-douyin.png" width="32" height="32" alt="抖音" style="width:32px;max-width:32px;height:32px;" title="抖音"></a>
+                          <a href="https://www.greatline.eu" target="_blank" rel="noopener" style="display:inline-block;margin:0 6px;"><img src="https://www.double-triple.com/edm/assets/common/logo-greatline.png" width="32" height="32" alt="瑞桉旅游" style="width:32px;max-width:32px;height:32px;" title="瑞桉旅游"></a>
+                          <a href="https://www.greatline.eu" target="_blank" rel="noopener" style="display:inline-block;margin:0 6px;"><img src="https://www.double-triple.com/edm/assets/common/logo-bokiko.png" width="32" height="32" alt="关于瑞桉" style="width:32px;max-width:32px;height:32px;" title="关于瑞桉"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding-top:8px;font-size:11px;line-height:1.8;color:#bfbfbf;">
+                          <span class="office-line"><strong>欧洲Office</strong>：爱沙尼亚·塔林&nbsp;&nbsp;&nbsp; 波兰·华沙&nbsp;&nbsp;&nbsp; 塞尔维亚·贝尔格莱德&nbsp;&nbsp;&nbsp; 克罗地亚·萨格勒布</span><br>
+                          <span class="office-line"><strong>中国Office</strong>：中国·北京&nbsp;&nbsp;&nbsp; 中国·广州&nbsp;&nbsp;&nbsp; 中国·南京&nbsp;&nbsp;&nbsp; 中国·成都&nbsp;&nbsp;&nbsp; 中国·上海</span><br>
+                          <span class="office-line"><strong>邮箱</strong>：<a href="mailto:Jack@greatline.eu" style="color:#bfbfbf;text-decoration:none;">Jack@greatline.eu</a>&nbsp;&nbsp;&nbsp; <strong>24H电话</strong>：176-1038-7600(微信)</span>
+                          <div style="text-align:center;margin-top:8px;color:#f3f2f2;font-size:12px;line-height:1.8;font-weight:bold;">
+                            <span class="copyright">Copyright：瑞桉旅游丨Great Line Travel X BOKIKO Tour Group</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+              </table>
+
+            </td>
+          </tr>
+        </table>
+                <!-- ========== 固定区结束：Footer 社媒/版权/Office 信息 ========== -->
+
+        <!-- /固定航空信件边框 -->
+
+        <!-- ========== 固定区开始：底部订阅/退订，不得修改，除非用户明确授权 ========== -->
+        <!-- 邮件订阅操作区：边框之外，底部 -->
+        <table role="presentation" class="email-wrap" width="660" cellpadding="0" cellspacing="0" style="width:660px;max-width:660px;margin:10px 0 0 0;">
+          <tr>
+            <td align="center" style="font-size:12px;line-height:1.6;color:#777777;">
+              <!-- 正式群发时，建议将 href 替换为 EDM 平台退订变量，例如 {{UNSUBSCRIBE_URL}} -->
+              <a href="mailto:Jack@greatline.eu?subject=我要退订此邮件&body=您好，我希望退订瑞桉旅游邮件。" style="color:#888888;text-decoration:none;">💔 我要退订此邮件</a>
+              <span style="color:#cccccc;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              <!-- 正式群发时，可将 href 替换为订阅落地页 URL -->
+              <a href="mailto:Jack@greatline.eu?subject=我要订阅此邮件&body=您好，我希望订阅瑞桉旅游邮件。" style="color:#1e9538;text-decoration:none;font-weight:bold;">❤️ 我要订阅此邮件</a>
+            </td>
+          </tr>
+        </table>
+
+
+        <!-- ========== 固定区结束：底部订阅/退订 ========== -->
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
